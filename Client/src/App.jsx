@@ -29,6 +29,9 @@ import EmailSender from "./components/EmailSender";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import AboutUs from "./components/AboutUs";
+import InfraHistory from "./components/InfraHistory";
+import ApprovalHistory from "./components/ApprovalForms";
+
 
 const Layout = () => {
   return (
@@ -182,6 +185,14 @@ const App = () => {
           path: "/resetpassword/:token",
           element: <ResetPassword />,
         },
+        {
+          path:"/infrahistory",
+          element:<InfraHistory />
+        },
+        {
+          path:"/approvalhistory",
+          element:<ApprovalHistory />
+        }
       ],
     },
   ]);

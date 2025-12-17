@@ -52,7 +52,7 @@ const ApprovalHistory = () => {
 
   return (
     <Section>
-      <Heading className="md:max-w-md lg:max-w-4xl" title="Feedbacks" />
+      <Heading className="md:max-w-md lg:max-w-4xl" title="Approval History" />
 
       <div className="relative z-1 max-w-[90rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
         <div className="px-8 bg-n-8 border border-n-6 rounded-[2rem] lg:w-90 even:py-14 odd:py-8 odd:my-4 lg:backdrop-blur-sm">
