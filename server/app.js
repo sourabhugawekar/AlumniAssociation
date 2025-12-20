@@ -19,18 +19,21 @@ dotenv.config({ path: "./.env" });
 
 // app.use(express.urlencoded({extended:true}));
 
+
 app.use(bodyparser.json({ limit: "50mb" }));
 app.use(bodyparser.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173",process.env.CLIENT_URI],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );
+
+
 
 // dotenv.config({ path: "./.env" });
 
